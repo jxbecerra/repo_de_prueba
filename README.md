@@ -1,2 +1,6 @@
 # Repo de prueba - 7mo B
 Repositorio de prueba para ver control de versiones en el Villada
+
+## Como compilar el proyecto 
+- instalar ...
+- ejecutar ... 
