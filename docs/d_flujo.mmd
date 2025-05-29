@@ -1,0 +1,19 @@
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Revisar nivel de batería]
+    B -->|Batería baja| C[Ir a estación de carga]
+    C --> D[Recargar batería]
+    D --> B
+    B -->|Batería suficiente| E[Revisar zona programada]
+    E --> F[Detectar obstáculos]
+    F -->|Obstáculo detectado| G[Evitar obstáculo]
+    G --> F
+    F -->|Sin obstáculo| H[Activar cuchillas]
+    H --> I[Avanzar y cortar pasto]
+    I --> J[¿Zona terminada?]
+    J -- No --> F
+    J -- Sí --> K[Detener cuchillas]
+    K --> L[Volver a base]
+    L --> M[Fin]
+```
