@@ -3,7 +3,7 @@
 flowchart TD
     A[Inicio] --> B[Revisar nivel de batería]
     B -->|Batería baja| C[Ir a estación de carga]
-    C --> D[Recargar batería]
+    C --> D[Recargar batería durante 1 hora]
     D --> B
     B -->|Batería suficiente| E[Revisar zona programada]
     E --> F[Detectar obstáculos]
